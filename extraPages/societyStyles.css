@@ -1,0 +1,168 @@
+:root{
+    --secondary-grey-1: #FCFCFC;
+    --secondary-grey-2: #E6E6E6;
+    --secondary-grey-3: #BFBFBF;
+    --secondary-grey-4: #EAEDEF;
+    --secondary-grey-5: #EEEEEE;
+    --secondary-grey-6: #fbfbfb;
+}
+/*-------------------------------------------------------------------*/
+body {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-grey-6);
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px var(--master__padding__left-right);
+
+    background-image: linear-gradient(#010716, #242424);
+
+}
+
+.society-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.5rem;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.society-about .society-name{
+    justify-content: flex-start;
+}
+
+.society-logo img{
+    max-width: 150px;
+    max-height: 80px;
+}
+
+ .society-name, .gallery__heading h1, .line-left, .line-right{
+    background-image: linear-gradient(rgb(244, 73, 149), rgb(248, 198, 69));
+}
+
+ .slideShow--slide, .slideShow--imageGallery {
+    /*background-image: linear-gradient(var(--secondary-grey-2),var(--secondary-grey-3));*/
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,206,110,1) 100%);
+}
+
+.nat-item103, .nat-item104, .nat-item102{
+    object-fit: cover;
+    object-position: right;
+}
+
+.whatSociety{
+    color: #4d4d4d;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding: 10px var(--master__padding__left-right);
+}
+
+.slideshow__caption{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: lighter;
+}
+
+.society-about{
+    padding: 20px var(--master__padding__left-right);
+}
+
+.society-about .society-name{
+    font-size: 1.5rem;
+}
+
+.society-about-text{
+    font-size: 1rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #4d4d4d;
+}
+
+.bottom__container{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+[class^="contact-detail-"]{
+    display: inline-grid;
+    grid-template-columns: 40px 300px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+[class^="item10"]{
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    [class^="contact-detail-"]{
+        display: grid;
+        grid-template-columns: 40px 200px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .society-name, .society-logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .society-about .society-name{
+        text-align: left;
+    }
+
+    .slideshow__caption{
+        color: white;
+    }
+
+}
+
+/*NATARAJ*/
+.nataraj .society-name,.nataraj .gallery__heading h1,.nataraj .line-left,.nataraj .line-right{
+    background-image: linear-gradient(rgb(244, 73, 149), rgb(248, 198, 69));
+}
+
+.nataraj .slideShow--slide,.nataraj .slideShow--imageGallery {
+    /*background-image: linear-gradient(var(--secondary-grey-2),var(--secondary-grey-3));*/
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,206,110,1) 100%);
+}
+
+.nat-item103, .nat-item104, .nat-item102{
+    object-position: right;
+}
+
+/*Markos*/
+
+.markos .society-name,.markos .gallery__heading h1,.markos .line-left,.markos .line-right{
+    background-image: linear-gradient(#F6590F, #F2B519);
+}
+
+.markos .slideShow--slide,.markos .slideShow--imageGallery {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, #F6590F 0%, #F2B519 100%);
+}
+
+/*Samayantar*/
+
+.samayantar .society-name,.samayantar .gallery__heading h1,.samayantar .line-left,.samayantar .line-right{
+    background-image: linear-gradient(#F2C335, #F28705);
+}
+
+.samayantar .slideShow--slide,.samayantar .slideShow--imageGallery {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, #F2C335 0%, #F28705 100%);
+}
